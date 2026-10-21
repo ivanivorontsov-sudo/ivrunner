@@ -1,0 +1,10 @@
+plugins { id 'com.android.application' }
+android {
+  namespace 'ru.ivancode.webapp'
+  compileSdk 35
+  defaultConfig { applicationId 'ru.ivancode.webapp'; minSdk 24; targetSdk 35; versionCode 1; versionName '1.0' }
+  compileOptions { sourceCompatibility JavaVersion.VERSION_1_8; targetCompatibility JavaVersion.VERSION_1_8 }
+  buildTypes { release { minifyEnabled false; shrinkResources false } }
+  androidResources { noCompress 'html','js','css','json','png','jpg','svg','woff2','ico' }
+  dependenciesInfo { includeInApk false; includeInBundle false }
+}
